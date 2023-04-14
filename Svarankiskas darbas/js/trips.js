@@ -449,6 +449,7 @@ function makeAirportForm() {
 const companiesButton = document.getElementById("companiesButton");
 const airportsButton = document.getElementById("airportsButton");
 const tripsButton = document.getElementById("tripsButton");
+const title = document.getElementById("title");
 function makeNavDefault() {
     if (companiesButton) {
         companiesButton.style.removeProperty('background-color');
@@ -479,6 +480,9 @@ function tripsPage() {
         tripsButton.style.backgroundColor = "rgb(97, 97, 97)";
         tripsButton.style.color = "white";
     }
+    if (title) {
+        title.innerHTML = "Reisai";
+    }
 }
 function companiesPage() {
     makeCompanyForm();
@@ -496,6 +500,9 @@ function companiesPage() {
         companiesButton.style.backgroundColor = "rgb(97, 97, 97)";
         companiesButton.style.color = "white";
     }
+    if (title) {
+        title.innerHTML = "Kompanijos";
+    }
 }
 function airportsPage() {
     makeAirportForm();
@@ -512,6 +519,9 @@ function airportsPage() {
     if (airportsButton) {
         airportsButton.style.backgroundColor = "rgb(97, 97, 97)";
         airportsButton.style.color = "white";
+    }
+    if (title) {
+        title.innerHTML = "Oro uostai";
     }
 }
 // ----------- {{ Calls }} -----------
