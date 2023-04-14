@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="lt">
+    <head>
+        <title>Lėktuvėliai/Reisai</title>
+        <meta charset="UTF-8">
+        
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <nav id="topNav"> 
+            <span id="logo">LĖKTUVĖLIAI</span> 
+            <span id="buttons"> <button id="airportsButton" onclick="airportsPage()">Oro uostai</button> 
+                <button id="companiesButton" onclick="companiesPage()">Kompanijos</button>
+                <button id="tripsButton" onclick="tripsPage()">Reisai</button> </span>
+            <span>Registruotis | Prisijungti | Atsijungti | Profilis</span>
+        </nav>
+
+        
+        <div class="popupBackground">
+            <div class="popup">
+                <button id="close" onclick="document.querySelector(`.popupBackground`).style.display = `none`">&times;</button>
+                <h2 id="popupHeader">Klaida.. </h2>
+                <p id="popupText">
+                    Text
+                </p>
+            </div>
+        </div>
+    
+        <main>
+            
+            <hr></hr>
+
+            <h1 id="formName">Reisas</h1>
+
+            <form id="inputData"> </form>
+
+            <h1 id="dataName">Esami reisai</h1>
+
+            <table id="dataTable"> </table>
+
+        </main>
+
+        <script src="js/trips.js"></script>
+
+    </body>
+</html>

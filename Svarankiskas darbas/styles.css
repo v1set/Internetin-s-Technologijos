@@ -1,0 +1,209 @@
+#logo {
+    font-size: 45px;
+    font-family: sans-serif;
+    color:rgb(167, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+nav {
+    
+    display: flex;
+    align-items:center;
+    width: 100%;
+    justify-content: space-between;
+}
+nav > span {
+    text-align: left;
+}
+nav > span > button {
+    font-size: 30px;
+    border-radius: 500px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #d3d3d3;
+    border: 0px;
+}
+nav > span > button:hover {
+    background-color: rgb(167, 0, 0); color: white;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#dataTable th {
+    background-color: rgb(167, 0, 0);
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+}
+td {
+    padding: 5px;
+}
+#dataTable tr {
+    background-color: #d3d3d3;
+}
+#dataTable tr:hover {background-color: rgb(97, 97, 97); color: white;}
+
+#dataTable button {
+    border-width: 0.5px;
+    background-color: #d3d3d3; color: black;
+    border-radius: 5px;
+}
+#dataTable button:hover {
+    background-color: rgb(167, 0, 0); color: white;
+}
+
+h1 {text-align: center; font-family: sans-serif;}
+
+
+
+
+form {
+    width: 369px;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 7px;
+    column-gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#inputData div {
+    width: 100%;
+}
+
+#inputData select,  #inputData input,  #inputData button {
+    padding: 5px;
+    width: 100%;
+    border: 0px;
+    border-radius: 500px;
+    background-color: #d3d3d3;
+    box-sizing: border-box;
+}
+#inputData select:hover,  #inputData input:hover,  #inputData button:hover {
+    background-color: rgb(97, 97, 97); color: white;
+}
+
+
+/* Popup */
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/* Popup */
+
+.popupBackground{
+    background-color: rgba(0,0,0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    /* border-radius: 30px; */
+    font-family: "Poppins",sans-serif;
+    display: none; 
+    text-align: center;
+}
+
+
+.popup{
+    background-color: #ffffff;
+    width: 420px;
+    padding: 10px 10px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 30px;
+    font-family: "Poppins",sans-serif;
+    display: block; 
+    text-align: center;
+    margin: 100px;
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #ffffff;
+		background: rgb(167, 0, 0);
+		border-radius: 100%;
+		width: 40px;
+		height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup h2{
+	margin-top: -20px;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: rgb(167, 0, 0);
+		border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 0;
+}
