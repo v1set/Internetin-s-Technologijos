@@ -415,7 +415,7 @@ function addCompany() {
     if (newCompany) {
         companies.push(newCompany)
         makeCompanyForm()
-        console.log(companies)
+        updateCompaniesTable()
     }
 }
 
@@ -500,13 +500,13 @@ function getAirportsFormData(id:String | undefined = undefined):IAirPort | undef
     
     let mistakes = false
     if (airportName === "") {
-        doPopup("Įveskite kompanijos kodą")
+        doPopup("Įveskite oro uosto kodą")
         mistakes = true
     }
 
     airPorts.forEach(airport => {
         if (airport.name === airportName) {
-            doPopup("Toks kompanijos kodas jau egzistuoja")
+            doPopup("Toks oro uostas jau egzistuoja")
             mistakes = true
         }
     })
@@ -529,7 +529,7 @@ function addAirport() {
     if (newAirport) {
         airPorts.push(newAirport)
         makeAirportForm()
-        console.log(airPorts)
+        updateAirportsTable()
     }
 }
 

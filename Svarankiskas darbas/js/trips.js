@@ -335,7 +335,7 @@ function addCompany() {
     if (newCompany) {
         companies.push(newCompany);
         makeCompanyForm();
-        console.log(companies);
+        updateCompaniesTable();
     }
 }
 function makeCompanyForm() {
@@ -400,12 +400,12 @@ function getAirportsFormData(id = undefined) {
     const airportName = (_a = document.getElementById("airportName")) === null || _a === void 0 ? void 0 : _a.value;
     let mistakes = false;
     if (airportName === "") {
-        doPopup("Įveskite kompanijos kodą");
+        doPopup("Įveskite oro uosto kodą");
         mistakes = true;
     }
     airPorts.forEach(airport => {
         if (airport.name === airportName) {
-            doPopup("Toks kompanijos kodas jau egzistuoja");
+            doPopup("Toks oro uostas jau egzistuoja");
             mistakes = true;
         }
     });
@@ -426,7 +426,7 @@ function addAirport() {
     if (newAirport) {
         airPorts.push(newAirport);
         makeAirportForm();
-        console.log(airPorts);
+        updateAirportsTable();
     }
 }
 function makeAirportForm() {
